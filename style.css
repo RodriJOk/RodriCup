@@ -9,7 +9,8 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: 'Sintony', sans-serif;
+    /*font-family: 'Sintony', sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
 }
 
 main{
@@ -34,7 +35,7 @@ header{
 header .logo{
     font-weight: bolder;
     color: var(--accets-color);
-    font-size: 22px;
+    font-size: 40px;
 }
 
 header nav ul{
@@ -105,7 +106,7 @@ header nav ul li a:hover{
 
 .portada .info-container {
     display: flex;
-    height: 350px;
+    height: 400px;
 
 }
 
@@ -115,7 +116,7 @@ header nav ul li a:hover{
 }
 
 .portada .info-container .content h1{
-    font-size: 72px;
+    font-size: 52px;
     margin: 30px 0 15px 0;
     color: var(--primary-color);
     line-height: 1em;
@@ -123,7 +124,7 @@ header nav ul li a:hover{
 
 .portada .info-container .content ul{
     list-style-image: url(img/bullet.svg);
-    padding: 0 30px;
+    padding: 20px 30px;
 }
 
 .portada .info-container .content li{
@@ -145,6 +146,7 @@ header nav ul li a:hover{
 .features-container{
     background-color: var(--accets-color);
      display: flex;
+     height: 125px;
      
 }
 
@@ -160,16 +162,16 @@ header nav ul li a:hover{
 
 .features-container .features-layout .features-items{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
 }
 
 .features-container .features-layout .features-items .features-item{
     font-size: 13px;
-    padding: 30px 15px;
-    display: inline-block;
+    padding: 15px 15px;
     vertical-align: center;
     width: 15%;
+    font-size: 16px;
 }
 
 .organic-container{
@@ -247,6 +249,7 @@ header nav ul li a:hover{
 
 .mar-container{
     background: white;
+    padding-top: 50px;
 }
 
 .mar-container .layout{
@@ -266,13 +269,20 @@ header nav ul li a:hover{
     justify-content: center;
 }
 
-.mar-container .mar-image-container .buttons-container{
+.mar-container .mar-description-container .buttons-container{
     padding: 20px 0;
     display: flex;
 }
 
-.mar-container .mar-image-container .buttons-container a{
-    width: 100%;
+.mar-container .mar-description-container .buttons-container .secondary-button{
+    background-color: #FCF0F3;
+    color: var(--secondary-color);
+}
+
+
+
+.mar-container .mar-description-container .buttons-container .fa-shopping-bag{
+    padding-right: 10px;
 }
 
 .banner{
@@ -392,16 +402,21 @@ header nav ul li a:hover{
     box-sizing: border-box;
 }
 
+.contact-container .back-layer .fa-shopping-bag{
+    padding: 0 10px;
+}
+
 .contact-container .front-layer{
     position: absolute;
     width: 100%;
     top: 0;
-    height: 461px;
+    height: 397px;
     display: grid;
     align-items: center;
     background-image: url(./img/hojas_contacto.png);
     background-repeat: no-repeat;
     background-position: center bottom;
+
 }
 
 .contact-container .front-layer .contact-info{
@@ -427,38 +442,41 @@ header nav ul li a:hover{
 
 .contact-container .front-layer .contact-info .info img{
     margin-right: 40px;
+    
 
 }
 
-footer{
-    padding-bottom: 40px;
+.footer{
+    padding: 70px 0px;
+    height: 10px;;
 }
 
-footer .layout{
+
+.footer .layout{
     display: flex;
     justify-content: space-between;
     
 }
 
-footer ul{
+.footer ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-footer li{
+.footer li{
     display: inline-block;
     margin: 0 20px;
 }
 
-footer li a {
+.footer li a {
     color: rgba(0,0,0, 0.5);
     text-decoration: none;
     font-weight: bolder;
     transition: color 0.5s;
 }
 
-footer li a:hover{
+.footer li a:hover{
     color: var(--secondary-color);
 }
 
